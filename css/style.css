@@ -1,5 +1,14 @@
-h1 {
-margin-left: 60px;;
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.medication {
+    padding: 20px 40px ;
+}
+
+.medication__header {
+margin: 0 0 15px 60px;
 }
 
 .list {
@@ -8,10 +17,13 @@ margin-left: 60px;;
 }
 
 .list__item {
+    padding: 8px 15px;
     max-width: 400px;
     border-radius: 5px;
     border: 1px solid yellowgreen;
     background-color: azure;
+
+    transform: scale(1);
 }
 
 .list__item:not(:last-child) {
@@ -27,6 +39,14 @@ margin-left: 60px;;
 /* .list__link:hover .list__item {
     background-color: rgb(255, 0, 4);
 } */
+
+/* .list__link {
+    transform: scale(1);
+} */
+
+.list__link:hover .list__item {
+transform: scale(1.1);
+}
 
 .list__box {
     display: flex;

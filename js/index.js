@@ -32,13 +32,13 @@ function addCard(event) {
 function createMarkup() {  
   const markup = someCardsArray.map(({ name, link }) =>
       ` 
-        <li class="list__item" id="${name}">          
+        <li class="list__item" id="${name}">
+          <a href="${link}" class="list__link" target=blank>        
             <div class="list__box">
               <img class="list__icon" src="./img/pills.svg" alt="pills" width="60">
-              <p class="list__text">
-                <a href="${link}" class="list__link" target=blank>${name}</a>
-              </p>
-            </div>          
+              <p class="list__text">${name}</p>
+            </div>
+          </a>          
         </li>
       `
   ).join("");
